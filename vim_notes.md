@@ -1,34 +1,24 @@
 # VIM notes
 
-### Reuse Last Selection
-- **Command**: `gv`  
-  - **Description**: Re-select the most recent visual selection.  
-  - **Example Use Case**: Quickly adjust or re-edit closing tags after a change.  
+### Useful commands
 
----
+**Reuse last selection**
 
-### Join Lines
+Useful when you marked multiple lines and added something in the beginning and want to add for example a closing tag at the end of the line.
 
-- **Command**: `J`  
-  - **Description**: Joins the current line with the next one, adding a space between them.  
-  - **Example**:  
-    ```plaintext
-    Line 1  
-    Line 2
-    ```
-    After pressing `J`:
-    ```plaintext
-    Line 1 Line 2
-    ```
+```
+gv
+```
 
-- **Command**: `gJ`  
-  - **Description**: Joins the current line with the next one **without** adding a space.  
-  - **Example**:  
-    ```plaintext
-    Line 1  
-    Line 2
-    ```
-    After pressing `gJ`:
-    ```plaintext
-    Line 1Line 2
-    ```
+**Join lines**
+
+```
+J           Join line with next one (space between)
+gJ          Join line with next one (no space between)
+```
+
+### Useful links
+
+- [VIM basic commands](https://m4xshen.dev/posts/vim-basic-commands)
+- [VIM command workflow](https://m4xshen.dev/posts/vim-command-workflow)
+- [Navigate between brackets](https://m4xshen.dev/posts/vim-commands-for-navigation-between-brackets)
